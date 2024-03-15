@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fetch5GNSAParameters">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/debugInfoText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="Debug Info:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/debugInfoValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/debugInfoText"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/hplmnText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="HPLMN-Sim State:"
+                android:textSize="22sp"
+                app:layout_constraintTop_toBottomOf="@+id/debugInfoText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/hplmnValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/hplmnText"
+                app:layout_constraintTop_toBottomOf="@+id/debugInfoValue" />
+
+            <TextView
+                android:id="@+id/slotText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="Slot Info:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/hplmnText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/slotValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/slotText"
+                app:layout_constraintTop_toBottomOf="@+id/hplmnValue" />
+
+            <TextView
+                android:id="@+id/splmnText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="Serving PLMN:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/slotText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/splmnValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/splmnText"
+                app:layout_constraintTop_toBottomOf="@+id/slotValue" />
+
+            <TextView
+                android:id="@+id/nwSelText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="Network Selection Mode:"
+                android:textSize="22sp"
+                app:layout_constraintTop_toBottomOf="@+id/splmnText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/nwSelValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/nwSelText"
+                app:layout_constraintTop_toBottomOf="@+id/splmnValue" />
+
+            <TextView
+                android:id="@+id/emmTacText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="EMM-TAC:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/nwSelText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/emmTacValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/emmTacText"
+                app:layout_constraintTop_toBottomOf="@+id/nwSelValue" />
+
+            <TextView
+                android:id="@+id/gutiText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="GUTI:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/emmTacText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/gutiValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/gutiText"
+                app:layout_constraintTop_toBottomOf="@+id/emmTacValue" />
+
+            <TextView
+                android:id="@+id/rrcBBwText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="LTE RRC-Band-Bandwidth:"
+                android:textSize="22sp"
+                app:layout_constraintTop_toBottomOf="@+id/gutiText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/rrcBBwValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/rrcBBwText"
+                app:layout_constraintTop_toBottomOf="@+id/gutiValue" />
+
+            <TextView
+                android:id="@+id/earfcnPciText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="Earfcn-PCI:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/rrcBBwText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/earfcnPciValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/earfcnPciText"
+                app:layout_constraintTop_toBottomOf="@+id/rrcBBwValue" />
+
+            <TextView
+                android:id="@+id/ltePciText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="LTEPCI1st-Earfcn-PCI:"
+                android:textSize="22sp"
+                app:layout_constraintTop_toBottomOf="@+id/earfcnPciText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/ltePciValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/ltePciText"
+                app:layout_constraintTop_toBottomOf="@+id/earfcnPciValue" />
+
+            <TextView
+                android:id="@+id/lteRsrpText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="RSRP-RSRQ-SNR:"
+                android:textSize="24sp"
+                app:layout_constraintTop_toBottomOf="@+id/ltePciText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/lteRsrpValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/lteRsrpText"
+                app:layout_constraintTop_toBottomOf="@+id/ltePciValue" />
+
+            <TextView
+                android:id="@+id/rrercText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="RREReqCause:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/lteRsrpText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/rrercValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/rrercText"
+                app:layout_constraintTop_toBottomOf="@+id/lteRsrpValue" />
+
+            <TextView
+                android:id="@+id/pccMimoText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="PCC MIMO Config:"
+                android:textSize="22sp"
+                app:layout_constraintTop_toBottomOf="@+id/rrercText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/pccMimoValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/pccMimoText"
+                app:layout_constraintTop_toBottomOf="@+id/rrercValue" />
+
+            <TextView
+                android:id="@+id/txPwrText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="Tx Pwr:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/pccMimoText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txPwrValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/txPwrText"
+                app:layout_constraintTop_toBottomOf="@+id/pccMimoValue" />
+
+            <TextView
+                android:id="@+id/ulir15Text"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="UpperLayer_Ind_R15:"
+                android:textSize="22sp"
+                app:layout_constraintTop_toBottomOf="@+id/txPwrText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/ulir15Value"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/ulir15Text"
+                app:layout_constraintTop_toBottomOf="@+id/txPwrValue" />
+
+            <TextView
+                android:id="@+id/dcnrRText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="DCNR_Restriction:"
+                android:textSize="22sp"
+                app:layout_constraintTop_toBottomOf="@+id/ulir15Text"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/dcnrRValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/dcnrRText"
+                app:layout_constraintTop_toBottomOf="@+id/ulir15Value" />
+
+            <TextView
+                android:id="@+id/nrRsrpText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="NR RSRP:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/dcnrRText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/nrRsrpValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/nrRsrpText"
+                app:layout_constraintTop_toBottomOf="@+id/dcnrRValue" />
+
+            <TextView
+                android:id="@+id/nrSinrText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="NR SINR:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/nrRsrpText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/nrSinrValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/nrSinrText"
+                app:layout_constraintTop_toBottomOf="@+id/nrRsrpValue" />
+
+            <TextView
+                android:id="@+id/nrRsrqText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="NR RSRQ:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/nrSinrText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/nrRsrqValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/nrRsrqText"
+                app:layout_constraintTop_toBottomOf="@+id/nrSinrValue" />
+
+            <TextView
+                android:id="@+id/nrSsbIdxText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="NR SSB Index:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/nrRsrqText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/nrSsbIdxValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/nrSsbIdxText"
+                app:layout_constraintTop_toBottomOf="@+id/nrRsrqValue" />
+
+            <TextView
+                android:id="@+id/nrArfcnText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="NR ARFCN:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/nrSsbIdxText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/nrArfcnValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/nrArfcnText"
+                app:layout_constraintTop_toBottomOf="@+id/nrSsbIdxValue" />
+
+            <TextView
+                android:id="@+id/nrPciText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="NR PCI:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/nrArfcnText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/nrPciValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/nrPciText"
+                app:layout_constraintTop_toBottomOf="@+id/nrArfcnValue" />
+
+            <TextView
+                android:id="@+id/nrRlfCntText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="NR RLF Count:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/nrPciText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/nrRlfCntValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/nrRlfCntText"
+                app:layout_constraintTop_toBottomOf="@+id/nrPciValue" />
+
+            <TextView
+                android:id="@+id/scgfText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="SCGF Type:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/nrRlfCntText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/scgfValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/scgfText"
+                app:layout_constraintTop_toBottomOf="@+id/nrRlfCntValue" />
+
+            <TextView
+                android:id="@+id/nrBandText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="NR Band:"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/scgfText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/nrBandValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/nrBandText"
+                app:layout_constraintTop_toBottomOf="@+id/scgfValue" />
+
+            <TextView
+                android:id="@+id/nrDlText"
+                android:layout_width="185dp"
+                android:layout_height="50dp"
+                android:text="NR DL Scheduling:"
+                android:textSize="22sp"
+                app:layout_constraintTop_toBottomOf="@+id/nrBandText"
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/nrDlValue"
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/nrDlText"
+                app:layout_constraintTop_toBottomOf="@+id/nrBandValue" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

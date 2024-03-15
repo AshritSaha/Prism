@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainscreen">
+
+    <TextView
+        android:id="@+id/signalStrengthMainscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signal Strength: "
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/networkTypeMainscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network Type: "
+        android:layout_below="@id/signalStrengthMainscreen"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/debugInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Debug Info: "
+        android:layout_below="@id/networkTypeMainscreen"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/hplmnTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HPLMN: "
+        android:layout_below="@id/debugInfoTextView"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/simStateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIM State: "
+        android:layout_below="@id/hplmnTextView"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/slotTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slot: "
+        android:layout_below="@id/simStateTextView"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/servingPlmnTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serving PLMN: "
+        android:layout_below="@id/slotTextView"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/nwSelModeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NW Selection Mode: "
+        android:layout_below="@id/servingPlmnTextView"
+        android:layout_marginTop="16dp" />
+    <TextView
+        android:id="@+id/emmStateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMM State: "
+        android:layout_below="@id/nwSelModeTextView"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tacTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAC: "
+        android:layout_below="@id/emmStateTextView"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/gutiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GUTI: "
+        android:layout_below="@id/tacTextView"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/lteRrcTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LTE RRC: "
+        android:layout_below="@id/gutiTextView"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/earfcnPciTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Earfcn/PCI: "
+        android:layout_below="@id/lteRrcTextView"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/fetch5GNSAParameters"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="Fetch 5G NSA Parameters"
+        android:onClick="fetch5GNSAParams"
+        android:layout_below="@+id/earfcnPciTextView"
+        android:layout_marginTop="16dp"
+        />
+        
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="app">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\Ashrit\.android\avd\Pixel_6a_API_31.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-03-12T05:03:01.237922600Z" />
+        </State>
+      </entry>
+      <entry key="fetch5GNSAParameters">
+        <State />
+      </entry>
+      <entry key="fetch5GSAParameters">
+        <State />
+      </entry>
+      <entry key="fetch5GSAparameters">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>
